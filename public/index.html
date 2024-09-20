@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Real-Time Chat App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1>Converse Room</h1>
+        </header>
+        <main class="chat-main">
+            <div id="messages"></div>
+        </main>
+        <div class="chat-form-container">
+            <form id="chat-form">
+                <input id="msg" type="text" placeholder="Enter message" autocomplete="off" required>
+                <button class="btn" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
